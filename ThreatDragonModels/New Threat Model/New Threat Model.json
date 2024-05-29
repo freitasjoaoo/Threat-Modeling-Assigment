@@ -209,8 +209,8 @@
           },
           {
             "position": {
-              "x": 120,
-              "y": 420
+              "x": 124.99999999999989,
+              "y": 420.0000000000002
             },
             "size": {
               "width": 140,
@@ -754,6 +754,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Test",
-    "threatTop": 21
+    "threatTop": 23
   }
 }
