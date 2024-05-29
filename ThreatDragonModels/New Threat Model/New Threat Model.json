@@ -91,8 +91,8 @@
                 "text": "User's Web Browser"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -106,23 +106,9 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "bd4cff9e-05d1-481e-b52c-d70d5f2a3bc6",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 1,
-                  "score": ""
-                }
-              ]
+              "threats": []
             }
           },
           {
@@ -162,7 +148,7 @@
                   "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
+                  "type": "Repudiation",
                   "description": "Users could perform actions and later deny having done so.",
                   "mitigation": "",
                   "modelType": "STRIDE",
@@ -206,16 +192,16 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "6d19a9d2-abcd-4e8b-8f93-c46d4b51d2ca",
+                  "id": "208d2542-7f5f-4529-8461-a5ada440c07c",
                   "title": "New STRIDE threat",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": " Sensitive user credentials might be exposed if the component is compromised.",
-                  "mitigation": "",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": false,
-                  "number": 9,
+                  "new": true,
+                  "number": 15,
                   "score": ""
                 }
               ]
@@ -235,8 +221,8 @@
                 "text": "Database"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -250,36 +236,9 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "1eaa283a-5a4d-4a94-8488-fdbd2c1e8005",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Attackers could overload the database with requests, making it unavailable.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": ""
-                },
-                {
-                  "id": "8335e6ed-ed16-43d7-b8b5-5a3dac776652",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 11,
-                  "score": ""
-                }
-              ]
+              "threats": []
             }
           },
           {
@@ -791,6 +750,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Test",
-    "threatTop": 11
+    "threatTop": 16
   }
 }
