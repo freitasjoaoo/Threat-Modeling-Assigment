@@ -19,26 +19,6 @@
         "cells": [
           {
             "position": {
-              "x": 339.9999999999997,
-              "y": 560.0000000000001
-            },
-            "size": {
-              "width": 230,
-              "height": 180
-            },
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "9f214d80-ca85-4ffd-8d65-e9e5005600ab",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
               "x": 400,
               "y": 260
             },
@@ -801,6 +781,39 @@
               {
                 "x": 430,
                 "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "f7dbdbe9-29ea-409b-b1d5-d3a5c2cd808f",
+            "source": {
+              "x": 610,
+              "y": 590
+            },
+            "target": {
+              "x": 370,
+              "y": 782
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 510
+              },
+              {
+                "x": 320,
+                "y": 610
               }
             ]
           }
