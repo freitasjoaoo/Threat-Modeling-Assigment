@@ -16,11 +16,781 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 340,
+              "y": 560
+            },
+            "size": {
+              "width": 220,
+              "height": 140
+            },
+            "shape": "trust-boundary-box",
+            "id": "1e2eb084-84ba-4acc-9911-80a5207e06cd",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 79.99999999999989,
+              "y": 380.0000000000002
+            },
+            "size": {
+              "width": 230,
+              "height": 160
+            },
+            "shape": "trust-boundary-box",
+            "id": "f6bc4da6-6df5-49d7-97ec-4918640aabd7",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 690,
+              "y": 380.0000000000001
+            },
+            "size": {
+              "width": 220,
+              "height": 150
+            },
+            "shape": "trust-boundary-box",
+            "id": "b9d5f353-1439-40cc-bb83-8ff0ecd87ca4",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 402.5,
+              "y": 260
+            },
+            "size": {
+              "width": 130,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "User's Web Browser"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "50c2bea8-0362-4822-a254-9dc054ff1bad",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User's Web Browser",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "bd4cff9e-05d1-481e-b52c-d70d5f2a3bc6",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 390,
+              "y": 590
+            },
+            "size": {
+              "width": 130,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Web Application"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Web Application",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "55e75127-8f73-4fe9-b8cb-92ca49e69a14",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Users could perform actions and later deny having done so.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 730,
+              "y": 410
+            },
+            "size": {
+              "width": 130,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Open Source \nAuthentication\n Component"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "015e7bfb-33d7-4ad0-8d11-0ac2698ae8ab",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Open Source \nAuthentication\n Component",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "6d19a9d2-abcd-4e8b-8f93-c46d4b51d2ca",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": " Sensitive user credentials might be exposed if the component is compromised.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 120,
+              "y": 420
+            },
+            "size": {
+              "width": 140,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Database"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "3531bf71-6b51-4676-8e70-146cdc463e7d",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Database",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "1eaa283a-5a4d-4a94-8488-fdbd2c1e8005",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers could overload the database with requests, making it unavailable.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "8335e6ed-ed16-43d7-b8b5-5a3dac776652",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 11,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Message-of-the-day \nRequest",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "e34fb16a-d847-4285-83a9-fd6325fa55b6",
+            "labels": [
+              "Message-of-the-day \nRequest"
+            ],
+            "source": {
+              "cell": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131"
+            },
+            "target": {
+              "x": 260,
+              "y": 460
+            },
+            "vertices": [
+              {
+                "x": 360,
+                "y": 570
+              },
+              {
+                "x": 330,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Comment\n Submission",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "964aeb1a-c232-4371-ab94-25eb569965e0",
+            "source": {
+              "x": 430,
+              "y": 590
+            },
+            "target": {
+              "cell": "3531bf71-6b51-4676-8e70-146cdc463e7d"
+            },
+            "vertices": [
+              {
+                "x": 390,
+                "y": 500
+              },
+              {
+                "x": 221,
+                "y": 360
+              }
+            ],
+            "labels": [
+              "Comment\n Submission"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authentication Result",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "acb78659-6bcc-4dc1-bb61-d937d24e0160",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "b729a9fc-cf73-46e1-b4fe-25d21be04663",
+            "source": {
+              "x": 860,
+              "y": 450
+            },
+            "target": {
+              "cell": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 450
+              },
+              {
+                "x": 910,
+                "y": 530
+              },
+              {
+                "x": 770,
+                "y": 760
+              },
+              {
+                "x": 450,
+                "y": 810
+              }
+            ],
+            "labels": [
+              "Authentication Result"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Message-of-the-day",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9edb971f-3250-46b1-88af-ebf37c3cd064",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "ec31a361-bb06-4c8f-a828-f64be9674366",
+            "source": {
+              "x": 140,
+              "y": 500
+            },
+            "target": {
+              "x": 390,
+              "y": 640
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 600
+              }
+            ],
+            "labels": [
+              "Message-of-the-day"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authentication Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0cec9697-f9d8-4be2-9c88-8249e1dc0a36",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "5f9682d5-e9d5-46aa-951d-1d465dcc819f",
+            "source": {
+              "x": 457,
+              "y": 670
+            },
+            "target": {
+              "cell": "015e7bfb-33d7-4ad0-8d11-0ac2698ae8ab"
+            },
+            "vertices": [
+              {
+                "x": 557,
+                "y": 740
+              }
+            ],
+            "labels": [
+              "Authentication Request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Message-of-the-day",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4db03a75-595c-4fc3-87eb-c03be2211de2",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "945ecea2-8ebf-4d2a-b48a-dd7d54ed3ea4",
+            "source": {
+              "x": 520,
+              "y": 625
+            },
+            "target": {
+              "cell": "50c2bea8-0362-4822-a254-9dc054ff1bad"
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 360
+              }
+            ],
+            "labels": [
+              "Message-of-the-day"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Login Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "381a1e4c-854d-412d-942c-a9c1f8abaf3e",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "22fa60ae-4c45-4689-b23c-5a3d88a45b9b",
+            "source": {
+              "x": 449,
+              "y": 340
+            },
+            "target": {
+              "cell": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131"
+            },
+            "vertices": [
+              {
+                "x": 449,
+                "y": 410
+              }
+            ],
+            "labels": [
+              "User Login Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Comment",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "93e728ce-a594-48e6-8d03-09488addba48",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "b3909e39-49d9-4b05-91ff-41665e0f53b4",
+            "source": {
+              "cell": "50c2bea8-0362-4822-a254-9dc054ff1bad"
+            },
+            "target": {
+              "x": 390,
+              "y": 670
+            },
+            "vertices": [
+              {
+                "x": 70,
+                "y": 300
+              },
+              {
+                "x": 100,
+                "y": 670
+              }
+            ],
+            "labels": [
+              "User Comment"
+            ]
+          }
+        ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "Test",
-    "threatTop": 0
+    "threatTop": 11
   }
 }
