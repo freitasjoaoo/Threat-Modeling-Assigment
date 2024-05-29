@@ -27,8 +27,8 @@
               "height": 180
             },
             "shape": "trust-boundary-box",
-            "id": "9f214d80-ca85-4ffd-8d65-e9e5005600ab",
             "zIndex": -1,
+            "id": "9f214d80-ca85-4ffd-8d65-e9e5005600ab",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -39,7 +39,7 @@
           },
           {
             "position": {
-              "x": 402.5,
+              "x": 400,
               "y": 260
             },
             "size": {
@@ -147,8 +147,8 @@
                 "text": "Open Source \nAuthentication\n Component"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -166,16 +166,16 @@
               "providesAuthentication": true,
               "threats": [
                 {
-                  "id": "c358eab0-a4f3-490b-a772-251d376422e5",
-                  "title": "Information Disclosed",
+                  "id": "5dede8a6-adc0-48dd-9299-fbc6df0f8c52",
+                  "title": "New generic threat",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "ensitive user credentials might be exposed if the component is compromised.",
+                  "mitigation": "",
+                  "modelType": "Generic",
                   "new": false,
-                  "number": 24,
+                  "number": 26,
                   "score": ""
                 }
               ]
@@ -214,16 +214,16 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "05432738-bc64-49b9-958d-3922eb3af663",
-                  "title": "New STRIDE threat",
+                  "id": "baae9b15-a3ce-4886-b248-860c068ab1b5",
+                  "title": "New generic threat",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 25,
+                  "type": "Denial of service",
+                  "description": "Attackers could overload the database with requests, making it unavailable",
+                  "mitigation": "",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 27,
                   "score": ""
                 }
               ]
@@ -809,6 +809,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Test",
-    "threatTop": 25
+    "threatTop": 27
   }
 }
