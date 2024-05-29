@@ -19,6 +19,26 @@
         "cells": [
           {
             "position": {
+              "x": 339.9999999999997,
+              "y": 560.0000000000001
+            },
+            "size": {
+              "width": 230,
+              "height": 180
+            },
+            "shape": "trust-boundary-box",
+            "id": "9f214d80-ca85-4ffd-8d65-e9e5005600ab",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 402.5,
               "y": 260
             },
@@ -142,9 +162,23 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": true,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c358eab0-a4f3-490b-a772-251d376422e5",
+                  "title": "Information Disclosed",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -161,8 +195,8 @@
                 "text": "Database"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -176,9 +210,23 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "05432738-bc64-49b9-958d-3922eb3af663",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 25,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -284,81 +332,6 @@
               {
                 "x": 221,
                 "y": 360
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Authentication Result",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "acb78659-6bcc-4dc1-bb61-d937d24e0160",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "b729a9fc-cf73-46e1-b4fe-25d21be04663",
-            "labels": [
-              "Authentication Result"
-            ],
-            "source": {
-              "x": 860,
-              "y": 450
-            },
-            "target": {
-              "cell": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131"
-            },
-            "vertices": [
-              {
-                "x": 940,
-                "y": 450
-              },
-              {
-                "x": 910,
-                "y": 530
-              },
-              {
-                "x": 770,
-                "y": 760
-              },
-              {
-                "x": 450,
-                "y": 810
               }
             ]
           },
@@ -717,12 +690,125 @@
                 "y": 620
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "27dad322-1751-46bf-8579-51b8c95286f7",
+            "source": {
+              "x": 88,
+              "y": 530
+            },
+            "target": {
+              "x": 250,
+              "y": 300
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 580
+              },
+              {
+                "x": 370,
+                "y": 450
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authentication Result",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "acb78659-6bcc-4dc1-bb61-d937d24e0160",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "b729a9fc-cf73-46e1-b4fe-25d21be04663",
+            "labels": [
+              "Authentication Result"
+            ],
+            "source": {
+              "x": 860,
+              "y": 450
+            },
+            "target": {
+              "cell": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 450
+              },
+              {
+                "x": 910,
+                "y": 530
+              },
+              {
+                "x": 770,
+                "y": 760
+              },
+              {
+                "x": 650,
+                "y": 810
+              },
+              {
+                "x": 450,
+                "y": 810
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "Test",
-    "threatTop": 23
+    "threatTop": 25
   }
 }
