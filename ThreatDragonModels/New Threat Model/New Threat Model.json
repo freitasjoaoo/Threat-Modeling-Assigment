@@ -27,8 +27,8 @@
               "height": 140
             },
             "shape": "trust-boundary-box",
-            "id": "1e2eb084-84ba-4acc-9911-80a5207e06cd",
             "zIndex": -1,
+            "id": "1e2eb084-84ba-4acc-9911-80a5207e06cd",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -47,8 +47,8 @@
               "height": 160
             },
             "shape": "trust-boundary-box",
-            "id": "f6bc4da6-6df5-49d7-97ec-4918640aabd7",
             "zIndex": -1,
+            "id": "f6bc4da6-6df5-49d7-97ec-4918640aabd7",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -67,8 +67,8 @@
               "height": 150
             },
             "shape": "trust-boundary-box",
-            "id": "b9d5f353-1439-40cc-bb83-8ff0ecd87ca4",
             "zIndex": -1,
+            "id": "b9d5f353-1439-40cc-bb83-8ff0ecd87ca4",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -91,24 +91,38 @@
                 "text": "User's Web Browser"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
-            "id": "50c2bea8-0362-4822-a254-9dc054ff1bad",
             "zIndex": 1,
+            "id": "50c2bea8-0362-4822-a254-9dc054ff1bad",
             "data": {
               "type": "tm.Actor",
               "name": "User's Web Browser",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5da1a986-1192-42c4-a939-c0e155f69654",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -132,8 +146,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131",
             "zIndex": 2,
+            "id": "9c2fddac-e5b3-4de5-8d0d-9aa3d7ac0131",
             "data": {
               "type": "tm.Actor",
               "name": "Web Application",
@@ -173,38 +187,24 @@
                 "text": "Open Source \nAuthentication\n Component"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
-            "id": "015e7bfb-33d7-4ad0-8d11-0ac2698ae8ab",
             "zIndex": 3,
+            "id": "015e7bfb-33d7-4ad0-8d11-0ac2698ae8ab",
             "data": {
               "type": "tm.Actor",
               "name": "Open Source \nAuthentication\n Component",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "208d2542-7f5f-4529-8461-a5ada440c07c",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 15,
-                  "score": ""
-                }
-              ]
+              "hasOpenThreats": false,
+              "providesAuthentication": true,
+              "threats": []
             }
           },
           {
@@ -228,8 +228,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "3531bf71-6b51-4676-8e70-146cdc463e7d",
             "zIndex": 4,
+            "id": "3531bf71-6b51-4676-8e70-146cdc463e7d",
             "data": {
               "type": "tm.Actor",
               "name": "Database",
@@ -326,6 +326,9 @@
               "threats": []
             },
             "id": "964aeb1a-c232-4371-ab94-25eb569965e0",
+            "labels": [
+              "Comment\n Submission"
+            ],
             "source": {
               "x": 430,
               "y": 590
@@ -342,9 +345,6 @@
                 "x": 221,
                 "y": 360
               }
-            ],
-            "labels": [
-              "Comment\n Submission"
             ]
           },
           {
@@ -393,6 +393,9 @@
               ]
             },
             "id": "b729a9fc-cf73-46e1-b4fe-25d21be04663",
+            "labels": [
+              "Authentication Result"
+            ],
             "source": {
               "x": 860,
               "y": 450
@@ -417,9 +420,6 @@
                 "x": 450,
                 "y": 810
               }
-            ],
-            "labels": [
-              "Authentication Result"
             ]
           },
           {
@@ -468,6 +468,9 @@
               ]
             },
             "id": "ec31a361-bb06-4c8f-a828-f64be9674366",
+            "labels": [
+              "Message-of-the-day"
+            ],
             "source": {
               "x": 140,
               "y": 500
@@ -481,9 +484,6 @@
                 "x": 190,
                 "y": 600
               }
-            ],
-            "labels": [
-              "Message-of-the-day"
             ]
           },
           {
@@ -532,6 +532,9 @@
               ]
             },
             "id": "5f9682d5-e9d5-46aa-951d-1d465dcc819f",
+            "labels": [
+              "Authentication Request"
+            ],
             "source": {
               "x": 457,
               "y": 670
@@ -544,73 +547,6 @@
                 "x": 557,
                 "y": 740
               }
-            ],
-            "labels": [
-              "Authentication Request"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Message-of-the-day",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "4db03a75-595c-4fc3-87eb-c03be2211de2",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "945ecea2-8ebf-4d2a-b48a-dd7d54ed3ea4",
-            "source": {
-              "x": 520,
-              "y": 625
-            },
-            "target": {
-              "cell": "50c2bea8-0362-4822-a254-9dc054ff1bad"
-            },
-            "vertices": [
-              {
-                "x": 660,
-                "y": 360
-              }
-            ],
-            "labels": [
-              "Message-of-the-day"
             ]
           },
           {
@@ -660,6 +596,9 @@
               ]
             },
             "id": "22fa60ae-4c45-4689-b23c-5a3d88a45b9b",
+            "labels": [
+              "User Login Credentials"
+            ],
             "source": {
               "x": 449,
               "y": 340
@@ -672,9 +611,6 @@
                 "x": 449,
                 "y": 410
               }
-            ],
-            "labels": [
-              "User Login Credentials"
             ]
           },
           {
@@ -724,6 +660,9 @@
               ]
             },
             "id": "b3909e39-49d9-4b05-91ff-41665e0f53b4",
+            "labels": [
+              "User Comment"
+            ],
             "source": {
               "cell": "50c2bea8-0362-4822-a254-9dc054ff1bad"
             },
@@ -740,9 +679,74 @@
                 "x": 100,
                 "y": 670
               }
-            ],
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Message-of-the-day",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4db03a75-595c-4fc3-87eb-c03be2211de2",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers could intercept and modify the data being transmitted between the user’s browser and the web application.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "945ecea2-8ebf-4d2a-b48a-dd7d54ed3ea4",
             "labels": [
-              "User Comment"
+              "Message-of-the-day"
+            ],
+            "source": {
+              "x": 520,
+              "y": 625
+            },
+            "target": {
+              "cell": "50c2bea8-0362-4822-a254-9dc054ff1bad"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 530
+              },
+              {
+                "x": 660,
+                "y": 360
+              }
             ]
           }
         ]
@@ -750,6 +754,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Test",
-    "threatTop": 16
+    "threatTop": 21
   }
 }
